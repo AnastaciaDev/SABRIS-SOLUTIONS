@@ -61,12 +61,52 @@ body {
   height: 100vh;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0A0A0A;
+  padding: 18px 50px;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul li a.active {
+  color: #00D4FF;
+}
+
+nav ul li a:hover {
+  color: #39FF14;
+  cursor: pointer;
+}
+
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 50px;
+  padding: 100px 50px 60px 50px;
+}
+
+.hero img {
+  max-width: 400px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 30px;
 }
 
 .label {
